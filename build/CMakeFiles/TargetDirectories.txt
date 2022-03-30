@@ -1,0 +1,4 @@
+C:/msys64/home/local_admin/CMake_Test/build/CMakeFiles/MyProject.dir
+C:/msys64/home/local_admin/CMake_Test/build/CMakeFiles/say-hello.dir
+C:/msys64/home/local_admin/CMake_Test/build/CMakeFiles/edit_cache.dir
+C:/msys64/home/local_admin/CMake_Test/build/CMakeFiles/rebuild_cache.dir
