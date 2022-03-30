@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/msys64/home/local_admin/CMake_Test/src/hello.cpp" "CMakeFiles/say-hello.dir/src/hello.cpp.obj" "gcc" "CMakeFiles/say-hello.dir/src/hello.cpp.obj.d"
+  "C:/msys64/home/local_admin/CMake_Test/hello-exe/main.cpp" "hello-exe/CMakeFiles/MyProject.dir/main.cpp.obj" "gcc" "hello-exe/CMakeFiles/MyProject.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "C:/msys64/home/local_admin/CMake_Test/build/say-hello/CMakeFiles/say-hello.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/say-hello.dir/src/hello.cpp.obj"
-  "CMakeFiles/say-hello.dir/src/hello.cpp.obj.d"
-  "libsay-hello.dll"
-  "libsay-hello.dll.a"
-  "libsay-hello.dll.manifest"
+  "CMakeFiles/say-hello.dir/src/say-hello/hello.cpp.obj"
+  "CMakeFiles/say-hello.dir/src/say-hello/hello.cpp.obj.d"
+  "libsay-hello.a"
   "libsay-hello.pdb"
 )
 

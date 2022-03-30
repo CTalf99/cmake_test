@@ -63,70 +63,101 @@ CMAKE_BINARY_DIR = /C/msys64/home/local_admin/CMake_Test/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyProject.dir/all
-all: CMakeFiles/say-hello.dir/all
+all: say-hello/all
+all: hello-exe/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: say-hello/preinstall
+preinstall: hello-exe/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyProject.dir/clean
-clean: CMakeFiles/say-hello.dir/clean
+clean: say-hello/clean
+clean: hello-exe/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyProject.dir
+# Directory level rules for directory hello-exe
 
-# All Build rule for target.
-CMakeFiles/MyProject.dir/all: CMakeFiles/say-hello.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/C/msys64/home/local_admin/CMake_Test/build/CMakeFiles --progress-num=1,2 "Built target MyProject"
-.PHONY : CMakeFiles/MyProject.dir/all
+# Recursive "all" directory target.
+hello-exe/all: hello-exe/CMakeFiles/MyProject.dir/all
+.PHONY : hello-exe/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/MyProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /C/msys64/home/local_admin/CMake_Test/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyProject.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /C/msys64/home/local_admin/CMake_Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/MyProject.dir/rule
+# Recursive "preinstall" directory target.
+hello-exe/preinstall:
+.PHONY : hello-exe/preinstall
 
-# Convenience name for target.
-MyProject: CMakeFiles/MyProject.dir/rule
-.PHONY : MyProject
-
-# clean rule for target.
-CMakeFiles/MyProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/clean
-.PHONY : CMakeFiles/MyProject.dir/clean
+# Recursive "clean" directory target.
+hello-exe/clean: hello-exe/CMakeFiles/MyProject.dir/clean
+.PHONY : hello-exe/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/say-hello.dir
+# Directory level rules for directory say-hello
+
+# Recursive "all" directory target.
+say-hello/all: say-hello/CMakeFiles/say-hello.dir/all
+.PHONY : say-hello/all
+
+# Recursive "preinstall" directory target.
+say-hello/preinstall:
+.PHONY : say-hello/preinstall
+
+# Recursive "clean" directory target.
+say-hello/clean: say-hello/CMakeFiles/say-hello.dir/clean
+.PHONY : say-hello/clean
+
+#=============================================================================
+# Target rules for target say-hello/CMakeFiles/say-hello.dir
 
 # All Build rule for target.
-CMakeFiles/say-hello.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/say-hello.dir/build.make CMakeFiles/say-hello.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/say-hello.dir/build.make CMakeFiles/say-hello.dir/build
+say-hello/CMakeFiles/say-hello.dir/all:
+	$(MAKE) $(MAKESILENT) -f say-hello/CMakeFiles/say-hello.dir/build.make say-hello/CMakeFiles/say-hello.dir/depend
+	$(MAKE) $(MAKESILENT) -f say-hello/CMakeFiles/say-hello.dir/build.make say-hello/CMakeFiles/say-hello.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/C/msys64/home/local_admin/CMake_Test/build/CMakeFiles --progress-num=3,4 "Built target say-hello"
-.PHONY : CMakeFiles/say-hello.dir/all
+.PHONY : say-hello/CMakeFiles/say-hello.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/say-hello.dir/rule: cmake_check_build_system
+say-hello/CMakeFiles/say-hello.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /C/msys64/home/local_admin/CMake_Test/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/say-hello.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 say-hello/CMakeFiles/say-hello.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /C/msys64/home/local_admin/CMake_Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/say-hello.dir/rule
+.PHONY : say-hello/CMakeFiles/say-hello.dir/rule
 
 # Convenience name for target.
-say-hello: CMakeFiles/say-hello.dir/rule
+say-hello: say-hello/CMakeFiles/say-hello.dir/rule
 .PHONY : say-hello
 
 # clean rule for target.
-CMakeFiles/say-hello.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/say-hello.dir/build.make CMakeFiles/say-hello.dir/clean
-.PHONY : CMakeFiles/say-hello.dir/clean
+say-hello/CMakeFiles/say-hello.dir/clean:
+	$(MAKE) $(MAKESILENT) -f say-hello/CMakeFiles/say-hello.dir/build.make say-hello/CMakeFiles/say-hello.dir/clean
+.PHONY : say-hello/CMakeFiles/say-hello.dir/clean
+
+#=============================================================================
+# Target rules for target hello-exe/CMakeFiles/MyProject.dir
+
+# All Build rule for target.
+hello-exe/CMakeFiles/MyProject.dir/all: say-hello/CMakeFiles/say-hello.dir/all
+	$(MAKE) $(MAKESILENT) -f hello-exe/CMakeFiles/MyProject.dir/build.make hello-exe/CMakeFiles/MyProject.dir/depend
+	$(MAKE) $(MAKESILENT) -f hello-exe/CMakeFiles/MyProject.dir/build.make hello-exe/CMakeFiles/MyProject.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/C/msys64/home/local_admin/CMake_Test/build/CMakeFiles --progress-num=1,2 "Built target MyProject"
+.PHONY : hello-exe/CMakeFiles/MyProject.dir/all
+
+# Build rule for subdir invocation for target.
+hello-exe/CMakeFiles/MyProject.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /C/msys64/home/local_admin/CMake_Test/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello-exe/CMakeFiles/MyProject.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /C/msys64/home/local_admin/CMake_Test/build/CMakeFiles 0
+.PHONY : hello-exe/CMakeFiles/MyProject.dir/rule
+
+# Convenience name for target.
+MyProject: hello-exe/CMakeFiles/MyProject.dir/rule
+.PHONY : MyProject
+
+# clean rule for target.
+hello-exe/CMakeFiles/MyProject.dir/clean:
+	$(MAKE) $(MAKESILENT) -f hello-exe/CMakeFiles/MyProject.dir/build.make hello-exe/CMakeFiles/MyProject.dir/clean
+.PHONY : hello-exe/CMakeFiles/MyProject.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

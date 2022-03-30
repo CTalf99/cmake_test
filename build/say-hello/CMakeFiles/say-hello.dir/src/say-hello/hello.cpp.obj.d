@@ -1,6 +1,6 @@
-CMakeFiles/say-hello.dir/src/hello.cpp.obj: \
- C:/msys64/home/local_admin/CMake_Test/src/hello.cpp \
- C:/msys64/home/local_admin/CMake_Test/src/hello.hpp \
+say-hello/CMakeFiles/say-hello.dir/src/say-hello/hello.cpp.obj: \
+ C:/msys64/home/local_admin/CMake_Test/say-hello/src/say-hello/hello.cpp \
+ C:/msys64/home/local_admin/CMake_Test/say-hello/src/say-hello/hello.hpp \
  C:/msys64/mingw64/include/c++/11.2.0/iostream \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h \
